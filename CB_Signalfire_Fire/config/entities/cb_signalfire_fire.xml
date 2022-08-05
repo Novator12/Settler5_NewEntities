@@ -37,7 +37,7 @@
             <X>500</X>
             <Y>-400</Y>
         </TerrainPos2>
-        
+        <Exploration>60</Exploration>
 
 		</Logic>
 	<Behavior>
