@@ -20,7 +20,7 @@ function ModLoader.Initialize()
 
 	CppLogic.ModLoader.AddEntityType("CB_Signalfire_Fire")
 
-	CppLogic.ModLoader.AddBuildingUpgradeCategory("CB_Signalfire", Entities.CB_Signalfire_Fire)
+	-- CppLogic.ModLoader.AddBuildingUpgradeCategory("CB_Signalfire", Entities.CB_Signalfire_Fire) only relevant when you are planning to upgrade with UpgradeCategory in Entity.xml
 end
 
 --- this function gets called after Initialize, only if the map starts fresh.
