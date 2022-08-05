@@ -1,0 +1,12 @@
+Erfordert eintrag in der kopierten originalen entities.xml:
+
+
+Unterhalb von
+
+<!-- ********************************************
+	   COMPUTERPLAYERBUILDINGS
+************************************************-->
+
+folgendes eintragen:
+
+<Entity>CB_SignalFire_Fire</Entity>
