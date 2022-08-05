@@ -38,7 +38,7 @@
             <Y>-400</Y>
         </TerrainPos2>
 
-    	<Exploration>60</Exploration>
+    	<Exploration>20</Exploration>
 	</Logic>
 	<Behavior>
 		<Logic classname="EGL::CGLEBehaviorProps">
