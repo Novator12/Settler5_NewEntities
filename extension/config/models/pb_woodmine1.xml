@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<CastShadow>False</CastShadow>
+	<SelectionOffsetX>100</SelectionOffsetX>
+   <SelectionOffsetY>0</SelectionOffsetY>  	  
+   <SelectionRadius>900</SelectionRadius>   
+   <SelectionTexture>Selection_Building</SelectionTexture>
+</root>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Logic>
+		<Freezes>false</Freezes>
+	</Logic>
+	<Display>
+		<Color>
+			<Red>255</Red>
+			<Green>100</Green>
+			<Blue>0</Blue>
+		</Color>
+		<TransparencyFactor>0.2</TransparencyFactor>
+		<TransparencyOffset>0.1</TransparencyOffset>
+		<TransparencyMin>0.0</TransparencyMin>
+		<TransparencyMax>1.2</TransparencyMax>
+		<DrawShoreWave>false</DrawShoreWave>
+		<Freezes>false</Freezes>
+		<IceBaseTexture>Water/Ice01Base</IceBaseTexture>
+		<IceDetailTexture>Water/Ice01Detail</IceDetailTexture>
+	</Display>
+</root>

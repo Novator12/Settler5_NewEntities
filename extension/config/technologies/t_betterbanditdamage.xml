@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<root>
+	<TecCategoryType>TC_Technologies</TecCategoryType>
+	<TimeToResearch>60</TimeToResearch>
+	<ResourceCosts>
+		  <Gold>500</Gold>
+		  <Clay/>
+		  <Wood>200</Wood>
+		  <Stone/>		
+		  <Iron>500</Iron>
+		  <Sulfur/>
+	</ResourceCosts>
+	<UseForStatisticsFlag>true</UseForStatisticsFlag>
+	
+	<DamageModifier>
+		<Value>2</Value>
+		<Operation>+</Operation>
+	</DamageModifier>
+	
+	<Conditions>	
+		<RequiredEntityConditions>1</RequiredEntityConditions>
+			
+			<EntityCondition>
+				<EntityType>CB_Barbarian_Castle3</EntityType>
+				<Amount>1</Amount>
+			</EntityCondition>		
+			
+		</Conditions>
+</root>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+	<Display classname="ED::CDisplayEntityProps">
+		<Class>ED::CDisplayBuilding</Class>
+		<Model>CB_Barbarian_Arena</Model>
+	</Display>
+	<Logic classname="GGL::CGLBuildingProps">
+		<Class>GGL::CBuilding</Class>
+  		<AccessCategory>AccessCategoryBuilding</AccessCategory> 
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<Category>MilitaryBuilding</Category>
+		<Category>SerfConversionBuilding</Category>
+		<MaxHealth>1500</MaxHealth>
+		<ArmorClass>ArmorClassFortification</ArmorClass> 
+	    <ArmorAmount>6</ArmorAmount>
+
+		<!-- Armor -->
+		<ModifyArmor>
+		  	<Technology>T_Masonry</Technology>		  
+		</ModifyArmor>     
+				
+		<!-- Exploration-->
+		<ModifyExploration>
+        	<Technology>T_CityGuard</Technology>
+        </ModifyExploration> 
+
+
+		<Upgrade>
+            <Time>40.0</Time>  
+            <Cost>
+			    <Clay>400</Clay>
+			    <Wood/>
+				    <Stone>800</Stone>
+				    <Gold/>
+				    <Iron/>
+				    <Sulfur/>
+            </Cost>
+            <Type>CB_Barbarian_Arena2</Type>
+        </Upgrade>
+
+
+		<ApproachPos>
+            <X>-1100</X>
+            <Y>0</Y>
+        </ApproachPos>
+		<ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>400</X>
+            <Y>0</Y>			
+        </DoorPos>
+
+        <Blocked1>
+            <X>900</X>
+            <Y>-1000</Y>
+        </Blocked1>
+        <Blocked2>
+        	<X>-900</X>
+            <Y>900</Y>
+        </Blocked2>
+		<TerrainPos1>
+            <X>1000</X>
+            <Y>-1100</Y>
+        </TerrainPos1>
+        <TerrainPos2>
+            <X>-1000</X>
+            <Y>1000</Y>
+        </TerrainPos2>
+
+    	<Exploration>20</Exploration>
+
+
+
+		<ConstructionInfo>
+        	<Time>90</Time>
+        	<Cost>
+			    <Clay>250</Clay>
+			    <Wood>500</Wood>
+				    <Stone>550</Stone>
+				    <Gold/>
+				    <Iron/>
+				    <Sulfur/>
+            </Cost>
+            <BuilderSlot>
+                <Position>
+                    <X>-1000</X>
+                    <Y>500</Y>
+                </Position>
+                <Orientation>0</Orientation>
+            </BuilderSlot>
+            <BuilderSlot>
+                <Position>
+                    <X>-1000</X>
+                    <Y>-700</Y>
+                </Position>
+                <Orientation>0</Orientation>
+            </BuilderSlot>
+            <BuilderSlot>
+                <Position>
+                    <X>0</X>
+                    <Y>-1100</Y>
+                </Position>
+                <Orientation>90</Orientation>
+            </BuilderSlot>
+            <BuilderSlot>
+                <Position>
+                    <X>0</X>
+                    <Y>1100</Y>
+                </Position>
+                <Orientation>-90</Orientation>
+            </BuilderSlot>     
+            <ConstructionSite>ZB_ConstructionSiteStables1</ConstructionSite>
+        </ConstructionInfo>
+		<ApproachPos>
+            <X>-1000</X>
+            <Y>50</Y>
+        </ApproachPos>
+		  <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>-100</X>
+            <Y>500</Y>
+        </DoorPos>
+
+
+		</Logic>
+	<Behavior>
+		  <Logic classname="EGL::CGLEBehaviorProps">
+			  <Class>EGL::GLEBehaviorMultiSubAnims</Class>
+		</Logic>
+		  <Display classname="ED::CBehaviorProps">
+			  <Class>ED::CDisplayBehaviorBuildingAnimation</Class>
+		</Display>
+	</Behavior>
+	<Behavior>
+		  <Logic classname="EGL::CGLEBehaviorProps">
+			  <Class>GGL::CBuildingBehavior</Class>
+		</Logic>
+		  <Display classname="GD::CBuildingBehaviorProps">
+			  <Class>GD::CBuildingBehavior</Class>
+			  <Banner>Default</Banner>
+			  <NumDamageEffects>27</NumDamageEffects>
+			  <NumDestroyEffects>39</NumDestroyEffects>
+		</Display>
+	</Behavior>
+	<Behavior>
+		  <Logic classname="GGL::CBarrackBehaviorProperties">
+			  <Class>GGL::CBarrackBehavior</Class>
+			  <LeaveTaskList>TL_LEAVE_BARBARENA</LeaveTaskList>
+			  <TrainingTime>20</TrainingTime>
+			  <TrainingTaskList>TL_TRAIN1_BARBARENA</TrainingTaskList>
+			  <TrainingTaskList>TL_TRAIN2_BARBARENA</TrainingTaskList>
+			  <TrainingTaskList>TL_TRAIN3_BARBARENA</TrainingTaskList>
+		</Logic>
+	</Behavior>
+</root>

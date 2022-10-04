@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><root>
+	<TecCategoryType>TC_Technologies</TecCategoryType>
+	<TimeToResearch>3</TimeToResearch>
+	<ResourceCosts>
+		  <Gold>1000</Gold>
+		  <Stone>1000</Stone>
+		  <Clay/>
+		  <Wood>500</Wood>
+		  <Iron/>
+		  <Sulfur/>
+	</ResourceCosts>
+	<Conditions>
+		<TecCondition>
+			<TecType>GT_BarbarianBuildings1</TecType>
+			<TecCategoryType></TecCategoryType>
+		</TecCondition>		
+	</Conditions>
+
+</root>

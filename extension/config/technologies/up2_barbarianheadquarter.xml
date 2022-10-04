@@ -1,0 +1,18 @@
+<root>
+	<TecCategoryType>TC_BuildingUpgrades</TecCategoryType>
+	<TimeToResearch>3</TimeToResearch>
+	<ResourceCosts>
+		<Clay>100</Clay>
+	</ResourceCosts>
+	<Conditions>
+		<RequiredTecConditions>2</RequiredTecConditions>
+		<TecCondition>
+			<TecType>GT_BarbarianBuildings2</TecType>
+			<TecCategoryType></TecCategoryType>
+		</TecCondition>	
+		<TecCondition>
+			<TecType>GT_ChainBlock</TecType>
+			<TecCategoryType></TecCategoryType>
+		</TecCondition>	
+	</Conditions>
+</root>
