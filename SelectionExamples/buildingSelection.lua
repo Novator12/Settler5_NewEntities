@@ -1,3 +1,70 @@
+function HelgarBombSelection()
+    GameCallback_GUI_SelectionChangedHelgarSel = GameCallback_GUI_SelectionChanged
+    function GameCallback_GUI_SelectionChanged()
+        GameCallback_GUI_SelectionChangedHelgarSel()
+        local sel = GUI.GetSelectedEntity()
+        if sel == GetID(trupp1) then
+            XGUIEng.ShowWidget("Selection_HeroVet", 1)
+        end
+        XGUIEng.DoManualButtonUpdate(gvGUI_WidgetID.InGame)
+    end
+end
+
+
+function BanditenSelection()
+    GameCallback_GUI_SelectionChangedBanditen = GameCallback_GUI_SelectionChanged
+    function GameCallback_GUI_SelectionChanged()
+        GameCallback_GUI_SelectionChangedBanditen()
+        local sel = GUI.GetSelectedEntity()
+        local type = Logic.GetEntityTypeName(Logic.GetEntityType(sel))
+        if type == "CU_BanditLeaderSword1" or type == "CU_BanditLeaderSword2" then
+            local VideoName = "data\\graphics\\videos\\cu_banditleadersword1.bik"
+                XGUIEng.StartVideoPlayback( gvGUI_WidgetID.VideoPreview, VideoName, 1 )
+        elseif type == "CU_BanditLeaderBow1" then
+            local VideoName = "data\\graphics\\videos\\pu_leaderbow2.bik"
+                XGUIEng.StartVideoPlayback( gvGUI_WidgetID.VideoPreview, VideoName, 1 )
+        elseif type == "CU_BanditLeaderBow2" then
+            local VideoName = "data\\graphics\\videos\\pu_leaderbow3.bik"
+                XGUIEng.StartVideoPlayback( gvGUI_WidgetID.VideoPreview, VideoName, 1 )
+        end
+        XGUIEng.DoManualButtonUpdate(gvGUI_WidgetID.InGame)
+    end
+end
+
+
+
+function CalvaryFormationSelection()
+    GameCallback_GUI_SelectionChangedCalvary = GameCallback_GUI_SelectionChanged
+    function GameCallback_GUI_SelectionChanged()
+        GameCallback_GUI_SelectionChangedCalvary()
+        local EntityId = GUI.GetSelectedEntity()
+        if Logic.GetEntityTypeName(Logic.GetEntityType(EntityId)) == "PU_LeaderCavalry1" or
+            Logic.GetEntityTypeName(Logic.GetEntityType(EntityId)) == "PU_LeaderCavalry2" or
+            Logic.GetEntityTypeName(Logic.GetEntityType(EntityId)) == "PU_LeaderHeavyCavalry1" or
+            Logic.GetEntityTypeName(Logic.GetEntityType(EntityId)) == "PU_LeaderHeavyCavalry2" then
+            XGUIEng.ShowWidget(gvGUI_WidgetID.SelectionLeader, 1)
+        end
+        if Logic.GetEntityTypeName(Logic.GetEntityType(EntityId)) == "PU_BattleSerf" then
+            XGUIEng.ShowWidget("Commands_Leader",1) -- battleserf formation fix
+        end
+    end
+end
+
+function IsHeroSelection()
+    GameCallback_GUI_SelectionChangedIsHero = GameCallback_GUI_SelectionChanged
+    function GameCallback_GUI_SelectionChanged()
+        GameCallback_GUI_SelectionChangedIsHero()
+        local EntityId = GUI.GetSelectedEntity()
+        if Logic.IsHero(EntityId) == 1 then
+            XGUIEng.DisableButton("Command_ExpelAll", 1)
+        else
+            XGUIEng.DisableButton("Command_ExpelAll", 0)
+        end
+        XGUIEng.DoManualButtonUpdate(gvGUI_WidgetID.InGame)
+    end
+end
+
+
 function BarbarianHQSelection()
 	GameCallback_GUI_SelectionChangedBarbarianCastle = GameCallback_GUI_SelectionChanged
     function GameCallback_GUI_SelectionChanged()
@@ -92,6 +159,7 @@ function SignalFireSelection()
 end
 
 
+
 function VillageCenterBarbSelection()
     GameCallback_GUI_SelectionChangedVillageBarb = GameCallback_GUI_SelectionChanged
     function GameCallback_GUI_SelectionChanged()
@@ -142,6 +210,7 @@ function WoodMineSelection1()
 			if Logic.IsConstructionComplete(sel)==1 then -- ui nicht anzeigen, wenn gebäude im bau, musst du bei denanderen neuen gebäuden vermutlich auch machen
 				XGUIEng.ShowWidget("Woodmine", 1)
                 XGUIEng.ShowWidget("Upgrade_Woodmine1", 1)
+                XGUIEng.ShowWidget("WoodMineAmount", 1)
 			end
             local VideoName = "data\\graphics\\videos\\pb_sawmill1.bik"
                 XGUIEng.StartVideoPlayback( gvGUI_WidgetID.VideoPreview, VideoName, 1 )
@@ -161,6 +230,7 @@ function WoodMineSelection2()
 				XGUIEng.ShowWidget("Woodmine", 1)
                 XGUIEng.ShowWidget("Upgrade_Woodmine1", 0)
                 XGUIEng.ShowWidget("Upgrade_Woodmine2", 1)
+                XGUIEng.ShowWidget("WoodMineAmount", 1)
 			end
             local VideoName = "data\\graphics\\videos\\pb_sawmill1.bik"
                 XGUIEng.StartVideoPlayback( gvGUI_WidgetID.VideoPreview, VideoName, 1 )
@@ -180,6 +250,7 @@ function WoodMineSelection3()
 				XGUIEng.ShowWidget("Woodmine", 1)
                 XGUIEng.ShowWidget("Upgrade_Woodmine1", 0)
                 XGUIEng.ShowWidget("Upgrade_Woodmine2", 0)
+                XGUIEng.ShowWidget("WoodMineAmount", 1)
 			end
             local VideoName = "data\\graphics\\videos\\pb_sawmill2.bik"
                 XGUIEng.StartVideoPlayback( gvGUI_WidgetID.VideoPreview, VideoName, 1 )
@@ -223,7 +294,9 @@ function BarbArenaSelection()
 end
 
 
-function InitBuildingSelection()  --Call in FMA
+
+
+function InitBuildingSelection()
     SerfSelection()
     BarbarianHQSelection() 
     SignalFireSelection() 
@@ -233,4 +306,7 @@ function InitBuildingSelection()  --Call in FMA
     WoodMineSelection2()
     WoodMineSelection3()
     BarbArenaSelection()
+    CalvaryFormationSelection()
+    IsHeroSelection()
+    BanditenSelection()
 end
