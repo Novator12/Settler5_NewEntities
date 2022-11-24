@@ -254,7 +254,6 @@
     <TerrainVertexColorPortion>1</TerrainVertexColorPortion>
   </Model>
 
-
   
   <Model id="CU_LeaderOutlaw1">
     <Effect>SettlerPlayerColorSpecular</Effect>

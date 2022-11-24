@@ -12,8 +12,7 @@
 	<Conditions>
 		<TecCondition>
 			<TecType>GT_BarbarianBuildings1</TecType>
-			<TecCategoryType></TecCategoryType>
 		</TecCondition>		
 	</Conditions>
-
+	<AutomaticResearch>true</AutomaticResearch>	
 </root>

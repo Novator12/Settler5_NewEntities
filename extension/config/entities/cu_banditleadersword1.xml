@@ -41,7 +41,9 @@
         </ModifyDamage>
 
         <Category>Military</Category>
+		<Category>Leader</Category>
         <Category>Melee</Category>
+		<Category>Sword</Category>
 		  <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
 		  <Exploration>20</Exploration>		
 		  <ArmorClass>ArmorClassLeather</ArmorClass>
@@ -83,7 +85,7 @@
 		  <Logic classname="GGL::CLeaderBehaviorProps">
 			  <Class>GGL::CLeaderBehavior</Class>
 			<BarrackUpgradeCategory>Arena</BarrackUpgradeCategory>			
-            <HomeRadius>2000</HomeRadius>
+            <HomeRadius>3000</HomeRadius>
 			  <SoldierType>CU_BanditSoldierSword1</SoldierType>
 			
 	        <BattleTaskList>TL_BATTLE</BattleTaskList>
@@ -109,7 +111,7 @@
 	        
 	        <HealingPoints>5</HealingPoints>
 	        <HealingSeconds>3</HealingSeconds>
-	        
+	        <UpkeepCost>20</UpkeepCost>
 		</Logic>
 	</Behavior>
 

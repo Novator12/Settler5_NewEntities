@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <SelectionRadius>55</SelectionRadius>
+    <Effect>SettlerPlayerColorSpecular</Effect>
+    <SelectionTexture>Selection_Soldier</SelectionTexture>
+    <OcclusionReceiver>True</OcclusionReceiver>
+</root>

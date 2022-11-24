@@ -43,10 +43,15 @@
 		
         <Category>Military</Category>
         <Category>Soldier</Category>
+		<Category>Bow</Category>
 		  <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
 		  <Exploration>25</Exploration>
     	<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
-    	<ExperiencePoints>10</ExperiencePoints>    	
+    	<ExperiencePoints>25</ExperiencePoints>    	
+		<Upgrade>                       
+			<Category>SoldierBanditBow</Category>
+			 <Type>CU_BanditSoldierBow2</Type> 
+		 </Upgrade>
 	</Logic>
 	<Behavior>
 		  <Logic classname="GGL::CGLAnimationBehaviorExProps">
@@ -85,18 +90,20 @@
 	        <HitAnim>CU_BanditLeaderBow1_Hit</HitAnim>
 	        
 	        <DamageClass>DC_Pierce</DamageClass>
-	        <DamageAmount>10</DamageAmount>
+	        <DamageAmount>14</DamageAmount>
 	        <MaxRandomDamageBonus>2</MaxRandomDamageBonus>
 	        <ArmorClass>ArmorClassJerkin</ArmorClass> 
-		  	<ArmorAmount>4</ArmorAmount>
+		  	<ArmorAmount>3</ArmorAmount>
 	        <BattleWaitUntil>3000</BattleWaitUntil>
 	        
 	        <MissChance>9</MissChance>
 	        
 	        <ProjectileEffectID>FXArrow</ProjectileEffectID>
 	        
-	        <MaxRange>2300</MaxRange>
+	        <MaxRange>2500</MaxRange>
 	        <MinRange>0.0f</MinRange>
+	        
+	        
 		</Logic>
 	</Behavior>
 	

@@ -129,10 +129,9 @@
 	<Behavior>
 	    <Logic classname="GGL::CRangedEffectAbilityProps">
 	        <Class>GGL::CRangedEffectAbility</Class>
-	        <RechargeTimeSeconds>120</RechargeTimeSeconds>
 	        <AffectsOwn>true</AffectsOwn>
 			  <AffectsMilitaryOnly>true</AffectsMilitaryOnly>
-			  <RechargeTimeSeconds>360</RechargeTimeSeconds>
+			  <RechargeTimeSeconds>150</RechargeTimeSeconds>
 			  <Range>1500.0</Range>
 			  <DurationInSeconds>40</DurationInSeconds>
 			  <DamageFactor>2.5</DamageFactor>
@@ -144,7 +143,7 @@
 	<Behavior>
 	    <Logic classname="GGL::CSummonBehaviorProps">
 	        <Class>GGL::CSummonBehavior</Class>
-	        <RechargeTimeSeconds>300</RechargeTimeSeconds>
+	        <RechargeTimeSeconds>150</RechargeTimeSeconds>
 	        <SummonedEntityType>CU_Barbarian_Hero_wolf</SummonedEntityType>
 	        <NumberOfSummonedEntities>6</NumberOfSummonedEntities>
 	        <SummonTaskList>TL_HERO5_SUMMON</SummonTaskList>

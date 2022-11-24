@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
 	<Display classname="ED::CDisplayEntityProps">
 		  <Class>GD::CDisplaySettler</Class>
 		  <Model>CU_LeaderOutlaw2</Model>
@@ -40,11 +41,13 @@
         </ModifyDamage>
 
         <Category>Military</Category>
+		<Category>Leader</Category>
         <Category>Melee</Category>
+		<Category>Sword</Category>
 		  <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
 		  <Exploration>20</Exploration>		
 		  <ArmorClass>ArmorClassLeather</ArmorClass>
-		  <ArmorAmount>6</ArmorAmount> 
+		  <ArmorAmount>8</ArmorAmount> 
 		  <DodgeChance>0</DodgeChance> 
     	<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
     	<ExperiencePoints>30</ExperiencePoints>
@@ -81,7 +84,7 @@
 		  <Logic classname="GGL::CLeaderBehaviorProps">
 			  <Class>GGL::CLeaderBehavior</Class>
 			<BarrackUpgradeCategory>Arena</BarrackUpgradeCategory>			
-            <HomeRadius>2000</HomeRadius>
+            <HomeRadius>3000</HomeRadius>
 			  <SoldierType>CU_BanditSoldierSword2</SoldierType>
 			
 	        <BattleTaskList>TL_BATTLE</BattleTaskList>
@@ -96,7 +99,7 @@
 	        <HitAnim>CU_LeaderOutlaw1_Hit</HitAnim>
 	        
 	        <DamageClass>DC_Strike</DamageClass>
-	        <DamageAmount>16</DamageAmount>	        
+	        <DamageAmount>18</DamageAmount>	        
 	        <MaxRandomDamageBonus>2</MaxRandomDamageBonus>
 	        
 	        <MaxRange>200</MaxRange>
@@ -105,9 +108,9 @@
 	        
 	        <BattleWaitUntil>2000</BattleWaitUntil>
 	        
-	        <HealingPoints>5</HealingPoints>
+	        <HealingPoints>7</HealingPoints>
 	        <HealingSeconds>3</HealingSeconds>
-	        
+			<UpkeepCost>20</UpkeepCost>
 		</Logic>
 	</Behavior>
 

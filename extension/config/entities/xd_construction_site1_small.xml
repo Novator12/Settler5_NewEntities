@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Display classname="ED::CDisplayEntityProps">
+		<Class>ED::CDisplayStaticEntity</Class>
+		<Model>XD_Construction_Site1_Small</Model>
+		<RenderInFoW>false</RenderInFoW>
+	</Display>
+	<Logic classname="EGL::CGLEEntityProps">
+		<Class>EGL::CGLEEntity</Class>
+		<AccessCategory>AccessCategoryStatic</AccessCategory> 
+		<DoNotExecute>True</DoNotExecute>
+		<DeleteWhenBuiltOn>false</DeleteWhenBuiltOn>
+        <SnapTolerance>30.0f</SnapTolerance>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<Visible>true</Visible>
+		<NeedsPlayer>false</NeedsPlayer>
+		
+
+	</Logic>
+</root>

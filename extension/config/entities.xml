@@ -174,11 +174,12 @@
 		<Entity>CB_Barbarian_Castle3</Entity>
 		<Entity>CB_SignalFire_Base</Entity>
 		<Entity>CB_SignalFire_Fire</Entity>
+		<Entity>CB_EvilBoat</Entity>
+		<Entity>XD_EvilBoat_Wreckage</Entity>
 		
 	<!-- ********************************************
 	   COMPUTERPLAYERUNITS
 	************************************************-->
-
 
         <Entity>CU_BlackKnight_SoldierSword3</Entity>
 		<Entity>CU_BanditLeaderSword1</Entity>
@@ -590,6 +591,9 @@
 		<Entity>XD_ResourceTree</Entity>
 		<Entity>XD_TreeStump1</Entity>
 
+		<Entity>XD_Construction_Site1</Entity>
+		<Entity>XD_Construction_Site1_Small</Entity>
+		<Entity>XD_Construction_SiteTower</Entity>
 		<Entity>XD_CliffEvelance1</Entity>
 		<Entity>XD_CliffEvelance2</Entity>
 		<Entity>XD_CliffEvelance3</Entity>
@@ -740,6 +744,8 @@
 		<Entity>ZB_UpgradeSiteVillageCenter1</Entity>
 		<Entity>ZB_UpgradeSiteTower1</Entity>
 
+
+
 	<!-- ********************************************
 	   DUMMIES
 	************************************************-->
@@ -797,6 +803,8 @@
 
 		<Entity>CU_BanditLeaderBow1</Entity>
 		<Entity>CU_BanditSoldierBow1</Entity>
+		<Entity>CU_BanditLeaderBow2</Entity>
+		<Entity>CU_BanditSoldierBow2</Entity>
 		<Entity>CU_Merchant</Entity>
 		
 		<Entity>PU_Scout</Entity>

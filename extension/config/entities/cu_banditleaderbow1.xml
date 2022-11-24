@@ -49,7 +49,10 @@
 		  <DodgeChance>0</DodgeChance> 
     	<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
     	<ExperiencePoints>25</ExperiencePoints>
-    	
+    	<Upgrade>                       
+			<Category>LeaderBanditBow</Category>
+			 <Type>CU_BanditLeaderBow2</Type> 
+		 </Upgrade>
 	</Logic>
 	<Behavior>
 		  <Logic classname="GGL::CGLAnimationBehaviorExProps">
@@ -82,7 +85,7 @@
 		  <Logic classname="GGL::CLeaderBehaviorProps">
 			  <Class>GGL::CLeaderBehavior</Class>			
 			  <BarrackUpgradeCategory>Arena</BarrackUpgradeCategory>			
-            <HomeRadius>2000</HomeRadius>
+            <HomeRadius>3000</HomeRadius>
 
 			  <SoldierType>CU_BanditSoldierBow1</SoldierType>
 			

@@ -23,7 +23,7 @@
 	<Logic classname="GGL::CGLSettlerProps">
 		  <Class>GGL::CSettler</Class>
 		  <AccessCategory>AccessCategorySettler</AccessCategory>	
-		  <MaxHealth>200</MaxHealth>
+		  <MaxHealth>180</MaxHealth>
 		  <ArmorClass>ArmorClassLeather</ArmorClass>
 		  <ArmorAmount>3</ArmorAmount> 
 		  <DodgeChance>0</DodgeChance>
@@ -49,11 +49,13 @@
 
 
         <Category>Military</Category>
+		<Category>Soldier</Category>
         <Category>Melee</Category>
+		<Category>Sword</Category>
 		  <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
 		  <Exploration>20</Exploration>
     	<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
-    	<ExperiencePoints>15</ExperiencePoints>
+    	<ExperiencePoints>30</ExperiencePoints>
     	<Upgrade>                       
     	   <Category>SoldierBandit</Category>
     	    <Type>CU_BanditSoldierSword2</Type> 

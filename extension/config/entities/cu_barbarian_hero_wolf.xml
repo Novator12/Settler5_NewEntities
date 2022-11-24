@@ -2,7 +2,7 @@
 <root>
 	<Display classname="ED::CDisplayEntityProps">
 		  <Class>GD::CDisplaySettler</Class>
-		  <Model>XA_Wolf</Model>
+		  <Model>Varg_Wolf</Model>
 			<Anim>XA_Wolf_Run</Anim>
 			<Anim>XA_Wolf_Wait</Anim>
 			<Anim>XA_Wolf_Attack1</Anim>
@@ -135,7 +135,7 @@
 	<Behavior>
 	    <Logic classname="GGL::CLimitedLifespanBehaviorProps">
 	        <Class>GGL::CLimitedLifespanBehavior</Class>
-	        <LifespanSeconds>180</LifespanSeconds>
+	        <LifespanSeconds>100</LifespanSeconds>
 	    </Logic>
 	</Behavior>
 

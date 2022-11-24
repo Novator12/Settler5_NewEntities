@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
 	<Display classname="ED::CDisplayEntityProps">
 		  <Class>GD::CDisplaySettler</Class>
-		  <Model>CU_SoldierOutlaw1</Model> 
+		  <Model>CU_SoldierOutlaw2</Model> 
 		  <DrawPlayerColor>True</DrawPlayerColor>		
 		  <Anim>CU_SoldierOutlaw1_Walk</Anim>
 		  <Anim>CU_SoldierOutlaw1_Idle1</Anim>
@@ -22,18 +22,39 @@
 	<Logic classname="GGL::CGLSettlerProps">
 		  <Class>GGL::CSettler</Class>
 		  <AccessCategory>AccessCategorySettler</AccessCategory>	
-		  <MaxHealth>150</MaxHealth>
+		  <MaxHealth>200</MaxHealth>
 		  <ArmorClass>ArmorClassLeather</ArmorClass>
-		  <ArmorAmount>3</ArmorAmount> 
+		  <ArmorAmount>6</ArmorAmount> 
 		  <DodgeChance>0</DodgeChance>
 		  <NeedsPlayer>true</NeedsPlayer>
 		  <ForceNoPlayer>false</ForceNoPlayer>
+		  <Hat/>
+		  <Cost>
+				<Gold>70</Gold>
+				<Iron>60</Iron>
+				<Wood>40</Wood>
+		  </Cost> 
+  
+		  
+		  <ModifyArmor>
+			  <Technology>T_BetterBanditArmor</Technology>
+		  </ModifyArmor>
+  
+		  <ModifyDamage>
+			  <Technology>T_BetterBanditDamage</Technology>
+		  </ModifyDamage>
+
+
+
+
         <Category>Military</Category>
+		<Category>Soldier</Category>
         <Category>Melee</Category>
+		<Category>Sword</Category>
 		  <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
 		  <Exploration>20</Exploration>
     	<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
-    	<ExperiencePoints>5</ExperiencePoints>
+    	<ExperiencePoints>30</ExperiencePoints>
     	<Upgrade>                       
             <Category>SoldierBandit</Category>
         </Upgrade>
@@ -79,7 +100,7 @@
 	        <HitAnim>CU_SoldierOutlaw1_Hit</HitAnim>
 	        
 	        <DamageClass>DC_Strike</DamageClass>
-	        <DamageAmount>12</DamageAmount>
+	        <DamageAmount>18</DamageAmount>
 	        <MaxRandomDamageBonus>2</MaxRandomDamageBonus>
 	        
 	        <MaxRange>200.0f</MaxRange>
